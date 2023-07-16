@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .kotak {
+        margin: 1rem auto 5rem auto;
+      }
+      .kotak:first-child {
+        width: 100px;
+        height: 100px;
+        background-color: skyblue;
+        animation-name: warna1;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+      }
+      .kotak:nth-child(2) {
+        width: 100px;
+        height: 100px;
+        background-color: salmon;
+        animation-name: warna2;
+        animation-duration: 5s;
+        position: relative;
+        animation-delay: 2s;
+
+      }
+      .kotak:last-child {
+        width: 100px;
+        height: 100px;
+        background-color: chartreuse;
+      }
+
+      .container {
+        animation-name: animasi;
+        animation-duration: 5s;
+      }
+      @keyframes warna1 {
+        0% {
+          background-color: red;
+        }
+        25% {
+          background-color: yellow;
+        }
+        50% {
+          background-color: blue;
+        }
+        100% {
+          background-color: green;
+        }
+      }
+      @keyframes warna2 {
+        0% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+        25% {
+          background-color: yellow;
+          left: 200px;
+          top: 0px;
+        }
+        50% {
+          background-color: blue;
+          left: 200px;
+          top: 200px;
+        }
+        75% {
+          background-color: green;
+          left: 0px;
+          top: 200px;
+        }
+        100% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+      <div class="kotak"></div>
+    </div>
+  </body>
+</html>
