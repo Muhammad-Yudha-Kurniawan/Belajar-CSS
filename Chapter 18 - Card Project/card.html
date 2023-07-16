@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .judul {
+        padding: 1rem;
+        background-color: #1e293b;
+        text-align: center;
+        color: white;
+        position: sticky;
+      }
+      .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: sticky;
+      }
+      .navbar p {
+        justify-content: center;
+        margin: 1rem;
+        align-self: center;
+        font-size: 1.5rem;
+        padding: 0 3rem 0 3rem;
+      }
+      .navbar p a {
+        color: black;
+      }
+      footer {
+        padding: 1rem;
+        background-color: #1e293b;
+        text-align: center;
+        color: white;
+        position: sticky;
+      }
+      .joe,
+      .matt,
+      .jane {
+        text-align: center;
+      }
+      .joe img,
+      .matt img,
+      .jane img {
+        margin: 3rem auto auto auto;
+        border-radius: 50%;
+        border: 5px double black;
+      }
+      .kotak {
+        width: 400px;
+        height: 500px;
+        background-color: #cbd5e1;
+        border-radius: 50px;
+        margin: 1rem auto 1rem auto;
+      }
+
+      @media screen and (min-width: 300px) {
+        
+        .kotak {
+          width: 350px;
+          height: 450px;
+        }
+        .navbar p{
+          padding: 0 1rem 0 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h1 class="judul">Our Staff</h1>
+      <div class="navbar">
+        <p><a href="#">Joe</a></p>
+        <p><a href="#">Matt</a></p>
+        <p><a href="#">Jane</a></p>
+      </div>
+    </nav>
+    <main>
+      <div class="joe">
+        <div class="kotak">
+          <div class="img">
+            <img
+              src="img/profile1-500x500.png"
+              width="300"
+              height="300"
+              alt="joe"
+            />
+            <figcaption>
+              <h1>Joe coder</h1>
+              <p>"I Code Stuff"</p>
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div class="matt">
+        <div class="kotak">
+          <div class="img">
+            <img
+              src="img/profile2-500x500.png"
+              width="300"
+              height="300"
+              alt="joe"
+            />
+            <figcaption>
+              <h1>Joe coder</h1>
+              <p>"I Code Stuff"</p>
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div class="jane">
+        <div class="kotak">
+          <div class="img">
+            <img
+              src="img/profile3-500x500.png"
+              width="300"
+              height="300"
+              alt="joe"
+            />
+            <figcaption>
+              <h1>Joe coder</h1>
+              <p>"I Code Stuff"</p>
+            </figcaption>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer><p>Copyrighty &copy; Muhammad Yudha Kurniawan</p></footer>
+  </body>
+</html>
